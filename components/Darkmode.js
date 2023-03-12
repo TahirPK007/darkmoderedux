@@ -6,13 +6,15 @@ const Darkmode = () => {
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
   return (
-    <View>
+    <View style={{}}>
       <Text style={{color: 'white'}}>Darkmode</Text>
-      <Switch
-        style={{backgroundColor: 'white', color: 'white'}}
-        onValueChange={toggleSwitch}
-        value={isEnabled}
-      />
+      <View>
+        <Switch
+          style={{height: 50, justifyContent: 'center', alignItems: 'center'}}
+          onValueChange={toggleSwitch}
+          value={isEnabled}
+        />
+      </View>
     </View>
   );
 };

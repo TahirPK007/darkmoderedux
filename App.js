@@ -5,10 +5,7 @@ import {Provider} from 'react-redux';
 import {store} from './app/store';
 import Darkmode from './components/Darkmode';
 
-
 const App = () => {
-
-  
   return (
     <Provider store={store}>
       <StaticScreen />

@@ -3,7 +3,7 @@ import React from 'react';
 
 const StaticScreen = () => {
   return (
-    <View style={{flex: 1, backgroundColor: 'black'}}>
+    <View style={{backgroundColor: 'black', height: '50%'}}>
       <Text style={{textAlign: 'center', fontSize: 50, color: 'white'}}>
         Essay
       </Text>
