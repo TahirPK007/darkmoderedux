@@ -1,19 +1,20 @@
-import {View, Text, Switch} from 'react-native';
+import {View, Text, Switch, TouchableOpacity} from 'react-native';
 import React, {useState, useEffect} from 'react';
 
 const Darkmode = () => {
-  const [isEnabled, setIsEnabled] = useState(false);
-  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
-
   return (
-    <View style={{}}>
-      <Text style={{color: 'white'}}>Darkmode</Text>
-      <View>
-        <Switch
-          style={{height: 50, justifyContent: 'center', alignItems: 'center'}}
-          onValueChange={toggleSwitch}
-          value={isEnabled}
-        />
+    <View style={{justifyContent: 'flex-end', alignItems: 'flex-end'}}>
+      <View
+        style={{justifyContent: 'center', alignItems: 'center', marginTop: 5}}>
+        <TouchableOpacity style={{backgroundColor: 'black'}}>
+          <Text style={{color: 'white'}}>Light-Mode</Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={{justifyContent: 'center', alignItems: 'center', marginTop: 5}}>
+        <TouchableOpacity style={{backgroundColor: 'black'}}>
+          <Text style={{color: 'white'}}>Dark-Mode</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
