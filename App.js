@@ -4,12 +4,14 @@ import StaticScreen from './components/StaticScreen';
 import {store} from './app/store';
 import Darkmode from './components/Darkmode';
 import {Provider} from 'react-redux';
+import Loginresponsive from './components/Loginresponsive';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <StaticScreen />
-      <Darkmode />
+      {/* <StaticScreen /> */}
+      {/* <Darkmode /> */}
+      <Loginresponsive />
     </Provider>
   );
 };
